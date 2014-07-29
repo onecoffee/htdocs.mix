@@ -34,6 +34,7 @@ a {
   min-width: 737px;
   box-shadow: 0 0 83px 0 rgba(33, 28, 30, 0.71);
   max-width: 1600px;
+  padding-bottom: 26px;
 }
 header {
   height: 165px;
@@ -113,6 +114,12 @@ h1 {
   width: 31.91056910569106%;
   margin-left: 2.134146341463415%;
 }
+
+.pages .action {
+  width: 18%;
+  min-height: 240px;
+}
+
 .action > h2 {
   font-size: 2.6875em;
   font-weight: 100;
@@ -182,11 +189,19 @@ h1 {
 .elements-set {
   padding: 0 1.953125%;
 }
-.action:first-child {
+
+.index .action:first-child {
   margin-left: 0px;
 }
+
+.line-menu {
+  font-size: 2.0155em;
+  padding-left: 60px;
+  text-transform: uppercase;
+}
+
 footer {
-  margin-top: 46px;
+  /*margin-top: 46px;*/
   background-color: #252525;
   background-image: url("/img/wavesup.png");
   background-position: center top;
@@ -200,7 +215,7 @@ footer h2 {
   font-size: 1.75em;
 }
 .footer-set {
-  margin-bottom: 2em;
+  /*margin-bottom: 2em;*/
 }
 .footer-set > div {
   color: white;
