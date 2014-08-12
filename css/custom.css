@@ -356,3 +356,72 @@ footer h2 {
     margin-top: 2em;
   }
 }
+
+.order {
+  background: none repeat scroll 0 0 white;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  box-shadow: 0 0 10px #6f6f6f;
+  left: 0;
+  padding: 14px 18px 18px;
+  position: absolute;
+  top: 30%;
+  width: 250px;
+}
+
+.order-head {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.order-wave {
+  background: url("/img/wavegrey.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+  height: 3px;
+  width: 100%;
+}
+
+.order-item {
+  border-bottom: 1px solid #e4e4e4;
+  color: black;
+  font-size: 0.75em;
+  padding: 13px 0 16px;
+}
+
+.order-item-head {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.weight {
+  color: #6f6f6f;
+}
+
+.total{
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+#pickup {
+  background: none repeat scroll 0 0 #02bcc9;
+  border-radius: 20px;
+  color: white;
+  display: inline-block;
+  font-size: 0.79em;
+  margin-top: 10px;
+  padding: 3px 10px;
+  text-decoration: none;
+}
+
+.label {
+  background: none repeat scroll 0 0 #02bcc9;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  box-shadow: 0 0 5px #6f6f6f;
+  color: white;
+  padding: 3px 13px 13px;
+  position: absolute;
+  right: -58px;
+  top: 31px;
+  transform: rotate(90deg);
+}
