@@ -138,7 +138,8 @@ h1 {
   text-align: center;
   width: 31.91056910569106%;
   margin-left: 2.134146341463415%;
-  height: 300px;
+  margin-left: 5.134146341463415%;
+  height: 340px;
 }
 
 .pages .action {
@@ -241,6 +242,7 @@ footer {
 footer h2 {
   font-size: 1.3125em;
   font-size: 1.75em;
+  margin: 1.8em 0 0.83em;
 }
 .footer-set {
   /*margin-bottom: 2em;*/
@@ -250,6 +252,11 @@ footer h2 {
   float: left;
   width: 50%;
 }
+
+.sn {
+  margin: 0 3px;
+}
+
 .onecoffee-logo {
   vertical-align: baseline;
 }
@@ -260,7 +267,7 @@ footer h2 {
   clear: both;
 }
 .copyright {
-  padding: 10px 0 0;
+  padding: 40px 0 0;
 }
 .super-menu {
   background: linear-gradient(transparent 22%, white 22%) repeat scroll 0 0 transparent;
@@ -363,16 +370,17 @@ footer h2 {
 }
 
 .order {
-  border-bottom-right-radius: 5px;
-  border-top-right-radius: 5px;
   box-shadow: 0 0 10px #6f6f6f;
   left: 0;
   position: absolute;
   top: 30%;
   width: 250px;
+  border-bottom-right-radius: 5px;
 }
 
 .order-wrap {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px; /* а можно просто для order поставить overflow:hidden но это чревато*/
   background: none repeat scroll 0 0 white;
   top: 0;
   left: 0;
