@@ -13,14 +13,16 @@
   <script src="js/jquery.js"></script>
   <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
   <script src="js/modernizr.js"></script>
-  <!--script src="js/jquery.catslider.js"></script-->
+
   <script src="js/main.js"></script>
   <link rel="stylesheet" href="css/normalize.min.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="fonts/stylesheet.css">
   <!--link rel="stylesheet" href="css/style.css"-->
   <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" />
+  <link rel="stylesheet" href="css/style2.css">
   <link rel="stylesheet" href="css/custom.css">
+
 </head>
 <body>
   <div class="main">
@@ -123,7 +125,36 @@
           </div>
       </div>
     </div>
-    <div class="slider"></div>
+    <div id="da-slider" class="da-slider">
+        <div class="da-slide">
+          <h2>Вкусные суши</h2>
+          <p>Очень, очень вкусные суши</p>
+          <a href="#" class="da-link">Подробности</a>
+          <div class="da-img"><img src="img/item-food-1.jpg" alt="image01" /></div>
+        </div>
+        <div class="da-slide">
+          <h2>Сытная лапша</h2>
+          <p>Вкусни. Сочни. Мжвячни.</p>
+          <a href="#" class="da-link">Подробности</a>
+          <div class="da-img"><img src="img/item-food-2.jpg" alt="image01" /></div>
+        </div>
+        <div class="da-slide">
+          <h2>Пицца</h2>
+          <p>Вкуснейшая пицца на тончайшем тесте!</p>
+          <a href="#" class="da-link">Подробности</a>
+          <div class="da-img"><img src="img/photo.jpg" alt="image01" /></div>
+        </div>
+        <div class="da-slide">
+          <h2>Акции</h2>
+          <p>Акционные акции акционируются акционно.</p>
+          <a href="#" class="da-link">Подробности</a>
+          <div class="da-img"><img src="img/photo2.jpg" alt="image01" /></div>
+        </div>
+        <nav class="da-arrows">
+          <span class="da-arrows-prev"></span>
+          <span class="da-arrows-next"></span>
+        </nav>
+      </div>
     <h1 class="main-color nautilus-font">Наши великолепные акции</h1>
       <div id="action-container" class="elements-set">
         <div class="action"><div class="action-image main-color-border" style="background-image: url('/img/photo.jpg')"></div>
@@ -142,30 +173,30 @@
           <h2 class="ristretto-font">БИЗНЕС ЛАНЧ ЗА 150Р</h2>
           <p>В нашем заведении вы можете пообедать сытно и вкусно за, например, 150 рублей!</p>
         </div>
-	    <div style="clear: both"></div>
+      <div style="clear: both"></div>
       </div>
       <div class="welcome">
         <p class="welcome-text nautilus-font">Добро пожаловать в кафе бар «Микс»</p>
         Любя, съешь щипцы, — вздохнёт мэр, — кайф жгуч. Шеф взъярён тчк щипцы с эхом гудбай Жюль. Эй, жлоб! Где туз? Прячь юных съёмщиц в шкаф. Экс-граф? Плюш изъят. Бьём чуждый цен хвощ! Эх, чужак! Общий съём цен шляп (юфть) — вдрызг! Любя, съешь щипцы, — вздохнёт мэр, — кайф жгуч. Шеф взъярён тчк щипцы с эхом гудбай Жюль. Эй, жлоб! Где туз? Прячь юных съёмщиц в шкаф. Экс-граф? Плюш изъят. Бьём чуждый цен хвощ! Эх, чужак! Общий съём цен шляп (юфть) — вдрызг!
       </div>
       <div id="optional-items" class="elements-set">
-	    <div class="action"><div class="action-image main-color-border" style="background-image: url('/img/photo.jpg')"></div>
-	      <h2 class="ristretto-font">ДОСТАВКА</h2>
-	      <p>Кухня работает до 02:30. Доставка пиццы бесплатна. При заказе на сумму от 400 рублей, доставка в пределах города бесплатно!</p>
-	    </div>
-	    <div class="action"><div class="action-image main-color-border" style="background-image: url('/img/photo2.jpg')"></div>
-	      <h2 class="ristretto-font">КАК НАС НАЙТИ?</h2>
-	      <p>Мы находимся по адресу:<br>Советская ул., 20, Орёл<br>8 (486) 254-00-36</p>
-	    </div>
-	    <div class="action"><div class="action-image main-color-border" style="background-image: url('/img/photo3.jpg')"></div>
-	      <h2 class="ristretto-font">АКЦИИ</h2>
-	      <p>Для постоянных клиентов гибкая система скидок. Доставка пиццы бесплатна. Организуем быструю доставку обедов в офисы.</p>
-	    </div>
-	    <div class="action last-action"><div class="action-image main-color-border" style="background-image: url('/img/photo.jpg')"></div>
-	      <h2 class="ristretto-font">ДОСТАВКА</h2>
-	      <p>Кухня работает до 02:30. Доставка пиццы бесплатна. При заказе на сумму от 400 рублей, доставка в пределах города бесплатно!</p>
-	    </div>
-	    <div style="clear: both"></div>
+      <div class="action"><div class="action-image main-color-border" style="background-image: url('/img/photo.jpg')"></div>
+        <h2 class="ristretto-font">ДОСТАВКА</h2>
+        <p>Кухня работает до 02:30. Доставка пиццы бесплатна. При заказе на сумму от 400 рублей, доставка в пределах города бесплатно!</p>
+      </div>
+      <div class="action"><div class="action-image main-color-border" style="background-image: url('/img/photo2.jpg')"></div>
+        <h2 class="ristretto-font">КАК НАС НАЙТИ?</h2>
+        <p>Мы находимся по адресу:<br>Советская ул., 20, Орёл<br>8 (486) 254-00-36</p>
+      </div>
+      <div class="action"><div class="action-image main-color-border" style="background-image: url('/img/photo3.jpg')"></div>
+        <h2 class="ristretto-font">АКЦИИ</h2>
+        <p>Для постоянных клиентов гибкая система скидок. Доставка пиццы бесплатна. Организуем быструю доставку обедов в офисы.</p>
+      </div>
+      <div class="action last-action"><div class="action-image main-color-border" style="background-image: url('/img/photo.jpg')"></div>
+        <h2 class="ristretto-font">ДОСТАВКА</h2>
+        <p>Кухня работает до 02:30. Доставка пиццы бесплатна. При заказе на сумму от 400 рублей, доставка в пределах города бесплатно!</p>
+      </div>
+      <div style="clear: both"></div>
       </div>
     <footer>
     <div class="elements-set footer-set">
@@ -183,6 +214,20 @@
       <p class="main-color clear copyright">©2014 Кафе Микс&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;Сделано с любовью в <a href="http://onecoffee.ru"><img src="/img/onecoffee.png" class="onecoffee-logo"></a></p>
     </footer>
   </div>
+
 <script src="js/main.js"></script>
+
+  <script src="js/jquery.cslider.js"></script>
+<script type="text/javascript">
+      $(function() {
+      
+        $('#da-slider').cslider({
+          autoplay  : true,
+          bgincrement : 5,
+          interval : 4000
+        });
+      
+      });
+    </script>
 </body>
 </html>

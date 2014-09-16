@@ -49,7 +49,7 @@ a > img {
   box-shadow: 0 0 83px 0 rgba(33, 28, 30, 0.71);
   max-width: 1600px;
   min-height: 100%;
-  padding-bottom: 140px;
+  padding-bottom: 190px;
   position: relative;
   /*height: 100%;*/
 }
@@ -125,7 +125,7 @@ nav li {
 .slider {
   height: 400px;
   margin-top: 65px;
-  background-image: url("/img/wavesdown.png"), url("/img/wavesup.png"), url("/img/slide.jpg");
+  background-image: url("/img/wavesdown.png"), url("/img/wavesup.png")/*, url("/img/slide.jpg")*/;
   background-position: center bottom, center top, center center;
   background-repeat: repeat-x, repeat-x, repeat;
 }
@@ -139,7 +139,26 @@ h1 {
   width: 31.91056910569106%;
   margin-left: 2.134146341463415%;
   margin-left: 5.134146341463415%;
-  height: 340px;
+  height: 300px;
+  padding-top: 5px;
+  position: relative;
+  transition: all 0.15s ease 0s;
+  padding: 5px 5px 10px;
+  min-width: 236px!important;
+  border-radius: 8px;
+  border: 2px solid white;
+}
+
+.action:hover {
+  border-bottom: 0px;
+  border-color: #1eca8f;
+  border-radius: 8px 8px 0;
+  border-style: solid solid none;
+  border-width: 2px 2px 0;
+}
+
+.index .action{
+  border-color: white!important;
 }
 
 .pages .action {
@@ -154,6 +173,82 @@ h1 {
 .action > p {
   line-height: 19px;
 }
+
+.params {
+  background: none repeat scroll 0 0 white;
+  border: 2px solid #1eca8f;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  bottom: 0px;
+  left: -2px;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+  border-top: 0px;
+  opacity: 0;
+  transition: bottom 0.3s, opacity 0.3s;
+  padding-bottom: 10px;
+  box-sizing: content-box;
+}
+
+.action:hover .params {
+  opacity: 1;
+  bottom: -66px;
+}
+
+/*checkboxes*/
+label {
+  -moz-user-select: none;
+  -o-user-select:none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+   user-select: none;
+   cursor: pointer;
+}
+
+.params input[type="checkbox"]{
+  display: none;
+}
+
+input[type="checkbox"] + div {
+  border: 2px solid #1eca8f;
+  display: inline-block;
+  height: 16px;
+  margin-left: 10px;
+  margin-right: 5px;
+  vertical-align: bottom;
+  width: 16px;
+  position: relative;
+}
+
+input[type="checkbox"] + div:after {
+  background-color: #1eca8f;
+  content: " ";
+  display: inline-block;
+  height: 6px;
+  left: 3px;
+  opacity: 0;
+  position: absolute;
+  top: 3px;
+  transition: all 0.15s ease 0s;
+  width: 6px;
+}
+
+input[type="checkbox"]:checked + div:after {
+  opacity: 1;
+}
+/* end of checkboxes*/
+
+.order_button {
+  background: none repeat scroll 0 0 #1eca8f;
+  border: 0 none;
+  border-radius: 10px;
+  color: white;
+  height: 24px;
+  margin-top: 20px;
+  width: 115px;
+}
+
 .mi-slider .action {
   width: 100%;
   margin-left: 0;
@@ -370,6 +465,7 @@ footer h2 {
 }
 
 .order {
+  display: none;
   box-shadow: 0 0 10px #6f6f6f;
   left: 0;
   position: absolute;
