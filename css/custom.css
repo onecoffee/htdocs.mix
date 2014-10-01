@@ -464,31 +464,19 @@ footer h2 {
   }
 }
 
-.order {
-  display: none;
-  box-shadow: 0 0 10px #6f6f6f;
-  left: 0;
-  position: absolute;
-  top: 30%;
-  width: 250px;
-  border-bottom-right-radius: 5px;
-}
-
 .order-wrap {
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px; /* а можно просто для order поставить overflow:hidden но это чревато*/
   background: none repeat scroll 0 0 white;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 14px 18px 18px;
+  padding: 14px 18px 9px;
   position: relative;
 }
 
 .order-head {
-  margin: 0;
   text-transform: uppercase;
+  font-size: 2em;
 }
 
 .order-wave {
@@ -497,26 +485,10 @@ footer h2 {
   width: 100%;
 }
 
-.order-item {
-  border-bottom: 1px solid #e4e4e4;
-  color: black;
-  font-size: 0.75em;
-  padding: 13px 0 16px;
-}
-
-.order-item-head {
-  color: black;
+.total {
+  display: inline-block;
   font-weight: bold;
-  text-decoration: none;
-}
-
-.weight {
-  color: #6f6f6f;
-}
-
-.total{
-  font-weight: bold;
-  margin-top: 10px;
+  margin-top: 13px;
 }
 
 #pickup {
@@ -526,19 +498,104 @@ footer h2 {
   display: inline-block;
   font-size: 0.79em;
   margin-top: 10px;
-  padding: 3px 10px;
+  padding: 5px 10px 3px;
+  position: absolute;
+  right: 17px;
   text-decoration: none;
 }
 
-.label {
-  background: none repeat scroll 0 0 #02bcc9;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
+.order{
+  width: 100%;
+  top: 0;
   box-shadow: 0 0 10px #6f6f6f;
-  color: white;
-  padding: 3px 13px 13px;
+  left: 0;
   position: absolute;
-  right: -58px;
-  top: 31px;
-  transform: rotate(90deg);
+  top: -390px;
+  width: 100%;
+  transition: 0.3s ease-out;
+}
+.items-wrap {
+  max-height: 310px;
+  min-height: 155px;
+  overflow-y: scroll;
+}
+.order-item {
+  border: 2px solid #ffffff;
+  display: block;
+  float: left;
+  height: 100%;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  position: relative;
+  text-align: center;
+  width: 150px;
+}
+.order-item, .order-item *{
+  transition: 0.25s ease;
+}
+.order-item:hover {
+  border: 2px solid rgba(241, 96, 52, 0.5);
+}
+.order-item-del > img {
+  height: 1em;
+  opacity: 0;
+  position: absolute;
+  right: 2px;
+  top: 2px;
+}
+.order-item:hover .order-item-del > img{
+  opacity: 1;
+}
+.item-image {
+  height: 80px;
+  max-width: 130px;
+}
+.item-name {
+  font-size: 1.7em;
+  margin-top: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.item-info {
+  bottom: 0;
+  font-size: 0.8em;
+  margin-bottom: 10px;
+  position: absolute;
+  width: 100%;
+}
+.order-wave{
+  clear: both;
+  margin-top: 5px;
+}
+.order-actions {
+  height: 38px;
+  text-align: center;
+}
+.your-order {
+  display: inline-block;
+  left: 17px;
+  position: absolute;
+}
+.label {
+  background: none repeat scroll 0 0 white;
+  border: 2px solid #02bcc9;
+  border-radius: 10px;
+  bottom: 0;
+  color: #f16034;
+  font-size: 0.5em;
+  font-weight: bold;
+  height: 20px;
+  line-height: 17px;
+  padding-right: 2px;
+  position: absolute;
+  right: -12px;
+  text-align: center;
+  width: 20px;
+}
+.order-panel {
+  top: -331px;
+}
+.order-show {
+  top: 0px;
 }
